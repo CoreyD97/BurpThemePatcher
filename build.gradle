@@ -1,0 +1,32 @@
+group 'CoreyD97'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "http://repo.spring.io/plugins-release/" }
+    maven { url "https://raw.github.com/java-decompiler/mvn-repo/master" }
+    flatDir { dirs 'libs' }
+}
+
+dependencies {
+    compile 'org.reflections:reflections:0.9.11'
+    compile 'jd:jd-core:0.7.1'
+    compile 'jd:jd-common:0.7.1'
+    compile 'org.apache.commons:commons-io:1.3.2'
+    compile 'com.bulenkov:darcula:2018.2'
+//    compile files('libs/burpsuite_pro_v2.0.11beta.jar')
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "BurpThemePatcher"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
