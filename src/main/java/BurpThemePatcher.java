@@ -27,7 +27,7 @@ public class BurpThemePatcher {
 
     File jar;
     URLClassLoader classLoader;
-    ClassCompiler classCompiler;
+//    ClassCompiler classCompiler;
     ClassPool classPool;
 
     Class colorManager;
@@ -55,12 +55,12 @@ public class BurpThemePatcher {
         this.classPool = ClassPool.getDefault();
         this.classPool.insertClassPath(new LoaderClassPath(this.classLoader));
         this.classFileNames = new ArrayList<>();
-        try {
-            this.classCompiler = new ClassCompiler(this.jar, classLoader);
-        } catch (LoaderException e) {
-            System.err.println("Could not make JarLoader.");
-            System.exit(1);
-        }
+//        try {
+//            this.classCompiler = new ClassCompiler(this.jar, classLoader);
+//        } catch (LoaderException e) {
+//            System.err.println("Could not make JarLoader.");
+//            System.exit(1);
+//        }
     }
 
     private void patch(){
