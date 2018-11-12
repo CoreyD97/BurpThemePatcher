@@ -17,7 +17,7 @@ Two palettes are currently available, the default palette and the dark palette.
 
 2) Edit the palettes as you wish and edit `BurpThemer.java` to enable your palette.
 
-3) (Optional) Set UIManager entries as described in `BurpThemer.java`.
+3) (Optional) Set UIManager entries as described in `BurpThemer.java`. Where the Darcula theme is in use, see [here](https://github.com/bulenkov/Darcula/blob/master/src/com/bulenkov/darcula/darcula.properties) for the properties overriden by the LaF.
 
 4) Make the patching script executable `chmod +x ./patch.sh`
 
