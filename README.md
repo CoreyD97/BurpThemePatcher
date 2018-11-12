@@ -3,11 +3,11 @@ As of v2.0.10beta, Burp Suite contains an interface used as a form of "color pal
 
 This tool aims to simplify the identification of this interface and the associated manager within the jars.
 
-Usage: `java -jar BurpThemePatcher.jar <YOUR BURP JAR HERE>`
+The tool will also extract the jars' built in palettes and generate a wrapper class to override the used palette.
  
-The tool will extract the jars' built in palettes and generate a wrapper class to override the used palette.
+Usage: `java -jar BurpThemePatcher.jar <YOUR BURP JAR HERE>`
 
-Two palettes are currently available, the default palette and the dark palette.
+Two built-in palettes are currently available, the default palette and the dark palette.
 
 **Note: I do not know which methods are for which elements. You'll have to use trial and error to find the one you require.**
 
