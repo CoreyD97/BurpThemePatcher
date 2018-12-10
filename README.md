@@ -1,4 +1,4 @@
-##Burp Theme Patcher
+## Burp Theme Patcher
 As of v2.0.10beta, Burp Suite contains an interface used as a form of "color palette".
 
 This tool aims to simplify the identification of this interface and the associated manager within the jars.
@@ -12,7 +12,7 @@ Two built-in palettes are currently available, the default palette and the dark 
 **Note: I do not know which methods are for which elements. You'll have to use trial and error to find the one you require.**
 
 
-###Usage 
+### Usage 
 1) `java -jar BurpThemePatcher.jar <YOUR BURP JAR HERE>` to extract the palettes.
 
 2) Edit the palettes as you wish and edit `BurpThemer.java` to enable your palette.
